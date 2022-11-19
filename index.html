@@ -12,12 +12,12 @@
     <h3>Cadastre-se</h3>
     <h4>É rápido e fácil</h4>
 
-    <form method="get" action="./index.html">
+    <form method="get" action="./index.html" enctype="multipart/form-data">
 
         <input type="text" name="nome" id="nome" placeholder="Nome">
         <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"><br><br>
         <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou e-mail"><br><br>
-        <input type="password" name="senha" id="senha" placeholder="Nova Senha"><br><br>
+        <input type="password" name="senha" id="senha" placeholder="Nova Senha" required><br><br>
 
         <label>Data de Nascimento:</label><br>
 
@@ -89,6 +89,8 @@
     <input type="radio" name="genero" id="Masculino" value="masculino">
     <label for="Personalizado">Personalizado</label>
     <input type="radio" name="genero" id="Personalizado" value="personalizado"><br><br>
+
+    <input type="file" name="imagem" id="imagem"><br><br>
 
     <input type="submit" value="Cadastre-se">
 
